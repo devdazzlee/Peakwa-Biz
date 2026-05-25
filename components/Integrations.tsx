@@ -127,7 +127,7 @@ export default function Integrations() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
         >
           {integrationGroups.map((group, i) => (
             <motion.div
@@ -135,17 +135,32 @@ export default function Integrations() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.4 + i * 0.08 }}
-              className="rounded-2xl p-5 glass hover:bg-white/[0.04] transition-all"
+              whileHover={{ y: -4 }}
+              className="rounded-2xl p-6 transition-all duration-300 group/card"
+              style={{
+                background: `linear-gradient(135deg, ${group.color}08, rgba(17,24,39,0.6))`,
+                border: `1px solid ${group.color}18`,
+              }}
+              onMouseEnter={(e) => { (e.currentTarget).style.borderColor = `${group.color}40`; (e.currentTarget).style.boxShadow = `0 12px 40px ${group.color}12`; }}
+              onMouseLeave={(e) => { (e.currentTarget).style.borderColor = `${group.color}18`; (e.currentTarget).style.boxShadow = "none"; }}
             >
-              <div className="flex items-center gap-2 mb-1">
-                <div className="w-2 h-2 rounded-full" style={{ backgroundColor: group.color }} />
-                <p className="text-xs font-bold uppercase tracking-wider" style={{ color: group.color, fontFamily: "var(--font-syne)" }}>
+              <div className="flex items-center gap-2.5 mb-4">
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: group.color, boxShadow: `0 0 8px ${group.color}60` }} />
+                <p className="text-sm font-bold uppercase tracking-wider" style={{ color: group.color, fontFamily: "var(--font-syne)" }}>
                   {group.title}
                 </p>
               </div>
-              <p className="text-sm text-[#9CA3AF] leading-relaxed">
-                {group.tools.slice(0, 3).join(" · ")} <span className="text-[#F9FAFB] font-medium">+ {group.tools.length - 3} more</span>
-              </p>
+              <div className="flex flex-wrap gap-2">
+                {group.tools.map((tool) => (
+                  <span
+                    key={tool}
+                    className="px-3 py-1.5 text-xs font-medium rounded-lg text-[#F9FAFB] transition-all duration-200"
+                    style={{ background: `${group.color}12`, border: `1px solid ${group.color}20` }}
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </motion.div>
