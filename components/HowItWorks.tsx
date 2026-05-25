@@ -73,7 +73,7 @@ export default function HowItWorks() {
             <span className="text-gradient">Success</span>
           </h2>
           <p className="text-[#9CA3AF] text-lg max-w-2xl mx-auto">
-            We&apos;ve simplified the process so you can focus on what matters most — running your business.
+            We&apos;ve simplified the process so you can focus on what matters most: running your business.
           </p>
         </motion.div>
 

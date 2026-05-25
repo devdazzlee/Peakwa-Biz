@@ -21,7 +21,7 @@ const testimonials = [
   {
     name: "Priya Patel",
     role: "Owner, Spice & Soul Kitchen",
-    text: "From POS systems to local SEO — Peakwa covered everything. Our online orders tripled in just three months.",
+    text: "From POS systems to local SEO, Peakwa covered everything. Our online orders tripled in just three months.",
     rating: 5,
     color: "#8B5CF6",
   },
@@ -79,7 +79,7 @@ export default function Testimonials() {
             Loved by <span className="text-gradient">Business Owners</span>
           </h2>
           <p className="text-[#9CA3AF] text-lg max-w-2xl mx-auto">
-            Don&apos;t just take our word for it — hear from the entrepreneurs we&apos;ve helped grow.
+            Don&apos;t just take our word for it. Hear from the entrepreneurs we&apos;ve helped grow.
           </p>
         </motion.div>
 

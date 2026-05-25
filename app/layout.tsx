@@ -15,9 +15,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Peakwa Biz Solutions — Build Your Business From Start to Scale",
+  title: "Peakwa Biz Solutions | Build Your Business From Start to Scale",
   description:
-    "Full-service business solutions: formation, merchant services, marketing, sales & CRM. From planning to selling — Peakwa handles every phase of your journey.",
+    "Full-service business solutions: formation, merchant services, marketing, sales & CRM. From planning to selling, Peakwa handles every phase of your journey.",
   keywords:
     "business solutions, LLC formation, merchant services, marketing, SEO, CRM, sales optimization",
 };

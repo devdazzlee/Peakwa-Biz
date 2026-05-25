@@ -92,8 +92,8 @@ export default function Hero() {
             variants={itemVariants}
             className="text-lg sm:text-xl text-[#9CA3AF] max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            From planning to selling — Peakwa handles every phase of your
-            journey. Business formation, payments, marketing, and sales — all
+            From planning to selling, Peakwa handles every phase of your
+            journey. Business formation, payments, marketing, and sales, all
             under one roof.
           </motion.p>
 

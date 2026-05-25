@@ -104,7 +104,7 @@ export default function SmartForm() {
   const handleSubmit = () => {
     setMessages((prev) => [
       ...prev,
-      { from: "user", text: `${name} — ${email}` },
+      { from: "user", text: `${name} | ${email}` },
       { from: "bot", text: `Thanks ${name}! ✅ Your request has been submitted. We'll contact you shortly. Looking forward to helping your business grow! 🚀` },
     ]);
     setSubmitted(true);
@@ -169,7 +169,7 @@ export default function SmartForm() {
                 </div>
                 <div>
                   <p className="text-base font-bold text-[#F9FAFB]" style={{ fontFamily: "var(--font-syne)" }}>Peakwa Assistant</p>
-                  <p className="text-xs text-[#10B981] font-medium">Online — replies instantly</p>
+                  <p className="text-xs text-[#10B981] font-medium">Online, replies instantly</p>
                 </div>
               </div>
 
@@ -275,7 +275,7 @@ export default function SmartForm() {
                   <AnimatePresence mode="wait" custom={dir}>
                     {step === 0 && (
                       <motion.div key="s0" custom={dir} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.3 }}>
-                        <h3 className="text-2xl font-bold text-[#F9FAFB] mb-2" style={{ fontFamily: "var(--font-syne)", lineHeight: 1.5 }}>
+                        <h3 className="text-2xl font-bold text-[#F9FAFB] mb-2" style={{ fontFamily: "var(--font-syne)", lineHeight: 1.7 }}>
                           What area do you need help with?
                         </h3>
                         <p className="text-sm text-[#9CA3AF] mb-7">Choose a service category to get started</p>
@@ -316,7 +316,7 @@ export default function SmartForm() {
 
                     {step === 1 && (
                       <motion.div key="s1" custom={dir} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.3 }} className="flex flex-col h-full">
-                        <h3 className="text-2xl font-bold text-[#F9FAFB] mb-2" style={{ fontFamily: "var(--font-syne)", lineHeight: 1.5 }}>
+                        <h3 className="text-2xl font-bold text-[#F9FAFB] mb-2" style={{ fontFamily: "var(--font-syne)", lineHeight: 1.7 }}>
                           Describe your business goal
                         </h3>
                         <p className="text-sm text-[#9CA3AF] mb-6">Or pick a quick option from the chat panel</p>
@@ -350,7 +350,7 @@ export default function SmartForm() {
 
                     {step === 2 && (
                       <motion.div key="s2" custom={dir} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.3 }} className="flex flex-col h-full">
-                        <h3 className="text-2xl font-bold text-[#F9FAFB] mb-2" style={{ fontFamily: "var(--font-syne)", lineHeight: 1.5 }}>
+                        <h3 className="text-2xl font-bold text-[#F9FAFB] mb-2" style={{ fontFamily: "var(--font-syne)", lineHeight: 1.7 }}>
                           How can we reach you?
                         </h3>
                         <p className="text-sm text-[#9CA3AF] mb-6">We&apos;ll get back to you within 24 hours</p>

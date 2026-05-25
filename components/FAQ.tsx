@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Can I choose only specific services?",
-    a: "Absolutely. Our services are modular — pick exactly what you need. Many clients start with one service and add more as they grow. There's no requirement to bundle.",
+    a: "Absolutely. Our services are modular, so you pick exactly what you need. Many clients start with one service and add more as they grow. There's no requirement to bundle.",
   },
   {
     q: "What makes Peakwa different from other business consultants?",
