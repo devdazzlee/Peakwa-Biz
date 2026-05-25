@@ -56,7 +56,7 @@ export default function Integrations() {
             </svg>
             Plays Nice With Your Stack
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-5" style={{ fontFamily: "var(--font-syne)", lineHeight: 1.2 }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-5" style={{ fontFamily: "var(--font-syne)" }}>
             Connects With <span className="text-gradient">Everything You Use</span>
           </h2>
           <p className="text-[#9CA3AF] text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">

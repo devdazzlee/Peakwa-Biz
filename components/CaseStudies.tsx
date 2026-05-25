@@ -95,7 +95,7 @@ export default function CaseStudies() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
             Proven Results
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-syne)", lineHeight: 1.25 }}>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-syne)" }}>
             Real stories. <span className="text-gradient">Real growth.</span>
           </h2>
           <p className="text-[#9CA3AF] text-base max-w-xl mx-auto">
